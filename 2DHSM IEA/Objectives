@@ -1,0 +1,30 @@
+IEA_2DHSM : class to apply 2dhsm encryption technique to an array of (grayscale) pixels
+    -completed: initializing 2d_hsm chaotic variables
+                adding random pixel border to image
+                making s1 and s2 chaotic matrix
+                encryption
+    -to do:     make program for rgb images
+                create a git repos to version control
+
+EncryptImage : class to manage images and display results
+    -completed: reading image from file
+                creating image from matrix of pixels
+    -convert pixel array into image and display it in the same window
+    -later on: analyse the encryption using the techniques highlighted in the paper
+
+!CORRECTIONS MADE!
+    1. Decryption algorithm will shift ith row right to left and jth column bottom to top
+    2. Access s[l] in opposite orders in encryption and decryption
+    3. encrypt : l=1, m=2; decrypt : l=2, m=1
+
+1/12/23:
+    Fixed transposition functions (cycleShiftLR/RL/BT/TB)
+    Fixed diffusion 1
+    have to do:
+    >Fix diffusion 2
+    >Fix order of operations in encryption/decryption
+    >make UI for encryption and decyption
+    >Add analysing program to UI
+    >make things pretty.
+    possible error in paper with diffusion 2.
+
